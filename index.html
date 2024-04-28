@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftyDIYCorner.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header-options {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .header-option {
+            background-color: #ffd700;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content {
+            padding: 20px;
+        }
+        .product {
+            background-color: #add8e6;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .blog {
+            background-color: #90ee90;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #ffd700;
+            cursor: pointer;
+        }
+        /* Improved contrast */
+        body {
+            background-color: #f5f5f5;
+        }
+        header, .footer {
+            background-color: #9c27b0;
+        }
+        .header-option, .product, .blog {
+            background-color: #4caf50;
+        }
+        .header-option:hover, .product:hover, .blog:hover {
+            background-color: #388e3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CraftyDIYCorner.com</h1>
+        <div class="header-options">
+            <div class="header-option">Paper</div>
+            <div class="header-option">Plastic</div>
+            <div class="header-option">Recycle</div>
+            <div class="header-option">Paint</div>
+            <div class="header-option">Thread</div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="product">
+            <h2>Product 1</h2>
+            <p>Description of product 1.</p>
+            <img src="product1.jpg" alt="Product 1">
+        </div>
+        <div class="blog">
+            <h2>Blog Post 1</h2>
+            <p>Summary of blog post 1.</p>
+            <img src="blog1.jpg" alt="Blog Post 1">
+        </div>
+        <!-- Add more products and blogs here -->
+    </div>
+    <form action="submit_form.php" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <label for="comment">Your Comment:</label>
+        <textarea id="comment" name="comment" placeholder="Your Comment" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="footer">
+        &copy; 2023 CraftyDIYCorner.com. All rights reserved.
+    </div>
+</body>
+</html>
